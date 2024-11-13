@@ -1,0 +1,57 @@
+{
+  "input": {
+    "data_1-color": "species",
+    "data_1-filter": "female",
+    "data_1-xvar": "body_mass_g",
+    "data_1-yvar": "flipper_length_mm"
+  },
+  "output": {
+    "output_1-plot": {
+      "src": "[image data hash: 21789b29d439ad80639bcf72975ae7a7]",
+      "width": 962,
+      "height": 400,
+      "alt": "Plot object",
+      "coordmap": {
+        "panels": [
+          {
+            "panel": 1,
+            "row": 1,
+            "col": 1,
+            "panel_vars": {
+
+            },
+            "log": {
+              "x": null,
+              "y": null
+            },
+            "domain": {
+              "left": 2575,
+              "right": 5325,
+              "bottom": 169.5,
+              "top": 224.5
+            },
+            "mapping": {
+              "colour": ".data[[\"species\"]]",
+              "shape": ".data[[\"species\"]]",
+              "x": ".data[[\"body_mass_g\"]]",
+              "y": ".data[[\"flipper_length_mm\"]]"
+            },
+            "range": {
+              "left": 37.82255993150681,
+              "right": 874.2026626712329,
+              "bottom": 368.8464731501984,
+              "top": 5.479452054794522
+            }
+          }
+        ],
+        "dims": {
+          "width": 962,
+          "height": 400
+        }
+      }
+    }
+  },
+  "export": {
+
+  }
+}
