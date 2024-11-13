@@ -16,5 +16,4 @@ plot_params <- reactive({
 testServer(mod_output_server, args = list(dat = dat, plot_params = plot_params),
  {
   out <- output$plot
-   browser()
  })
