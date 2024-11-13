@@ -7,6 +7,7 @@ test_that("Initial Shiny values are consistent", {
   app <- AppDriver$new(
     my_app,
     name = "basic-test",
+    variant= platform_variant(),
     shiny_args = list(port = httpuv::randomPort()) # use random port
   )
   app$expect_values()
