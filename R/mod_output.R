@@ -22,7 +22,7 @@ mod_output_server <- function(id, dat, plot_params){
     ns <- session$ns
 
     output$plot <- renderPlot({
-      
+      Sys.sleep(2)
       make_plot(
         dat(),
         plot_params()$xvar,
