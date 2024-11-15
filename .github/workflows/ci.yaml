@@ -1,0 +1,15 @@
+on:
+    push:
+      branches: main
+    pull_request:
+      branches: main
+  
+name: ci
+  
+jobs:
+    shiny-loadtest-ci: 
+      uses: ./.github/workflows/shiny-loadtest-ci.yaml
+    #  needs: R-CMD-check // For example is the check is a prequisite to the actual file you want to run
+    # R-CMD-check: 
+    #   uses: ./.github/workflows/R-CMD-check.yaml
+
