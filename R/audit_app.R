@@ -12,7 +12,7 @@ record_loadtest <- function(app = run_app(), timeout = 15, workers = 5) {
     load_timeout = timeout * 1000
   )
 
-  app$setInputs(
+  app$set_inputs(
     `data_1-filter` = "male",
     `data_1-xvar` = "bill_length_mm",
     `data_1-yvar` = "body_mass_g",

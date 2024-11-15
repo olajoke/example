@@ -1,7 +1,7 @@
 # Main shiny app
 shiny_bg <- function(app, port) {
   options(shiny.port = port)
-  app
+  shiny::runApp(app)
 }
 
 # Start recorder
