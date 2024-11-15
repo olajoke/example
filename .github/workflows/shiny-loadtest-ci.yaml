@@ -1,9 +1,7 @@
 on:
-  push:
-    branches: [main, master]
-  pull_request:
+  workflow_call:
 
-name: shiny-loadtest-ci.yaml
+name: shiny-loadtest-ci
 
 permissions: read-all
 
