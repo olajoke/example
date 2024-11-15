@@ -1,5 +1,6 @@
 # Main shiny app
 shiny_bg <- function(app, port) {
+  pkgload::load_all()
   options(shiny.port = port)
   shiny::runApp(app)
 }
