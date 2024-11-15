@@ -13,9 +13,11 @@ Imports:
     dplyr,
     ggplot2,
     golem (>= 0.4.1),
+    lubridate,
     palmerpenguins,
     rlang,
-    shiny (>= 1.9.0.9000)
+    shiny (>= 1.9.0.9000),
+    shinyloadtest
 Suggests:
     shinytest2,
     testthat (>= 3.0.0),
@@ -23,7 +25,6 @@ Suggests:
     covr,
     profvis,
     microbenchmark,
-    shinyloadtest,
     httpuv
 Encoding: UTF-8
 LazyData: true
