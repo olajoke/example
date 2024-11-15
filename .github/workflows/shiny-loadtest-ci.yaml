@@ -3,7 +3,7 @@ on:
 
 name: shiny-loadtest-ci
 
-permissions: read-all
+# permissions: read-all
 
 jobs:
   shiny-loadtest-ci:
