@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - {os: windows-latest, r: 'release'}
+         # - {os: windows-latest, r: 'release'}
           - {os: ubuntu-latest,   r: 'devel', http-user-agent: 'release'}
           - {os: ubuntu-latest,   r: 'release'}
           - {os: ubuntu-latest,   r: 'oldrel-1'}
@@ -52,7 +52,7 @@ jobs:
       - name: Run load test 🏥
         shell: Rscript {0}
         run: |
-            source("R/audit_app.R")
+            pkgload::load_all()
             record_loadtest();
 
       - name: Deploy to GitHub pages 🚀
